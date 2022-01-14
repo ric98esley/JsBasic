@@ -6,13 +6,13 @@ const op2 = "Papel";
 const op3 = "Tijera";
 
 var resultado = function(user, cpu){
-    if(user == "Piedra" && cpu == "Tijera"){
+    if(user == op1 && cpu == op3){
         console.log("El usuario GANO con " + user)
     }
-    else if(user == "Papel" && cpu == "Piedra"){
+    else if(user == op2 && cpu == op1){
         console.log("El usuario GANO con " + user)
     }
-    else if(user == "Tijera" && cpu == "Papel"){
+    else if(user == op3 && cpu == op2){
         console.log("El usuario GANO con " + user)
     }
     else if(user === cpu){
@@ -22,6 +22,7 @@ var resultado = function(user, cpu){
         console.log("El Computador GANO con " + cpu)
     };
 };
+
 user = op3;
 cpu = op2;
 
